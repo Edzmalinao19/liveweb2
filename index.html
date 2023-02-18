@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="registration.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+    <div class="navigation">
+        <nav>
+        <h2 class="logo"> <b> SAVE<span> PETS </b></span></h2>
+    
+    <ul>       
+        <li> <a href="homepage.html"> HOME </a> </li>
+        <li> <a href="#"> ADOPT DOGS </a> </li>
+        <li> <a href="#">DONATIONS </a> </li>
+        <li> <a href="#"> SERVICES </a> </li>
+        <li> <a href="#"> CONTACT US </a> </li>
+    </ul>
+
+    <div class="dropdown">
+        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+         <b>SIGN IN </b> 
+        </button>
+        <ul class="dropdown-menu dropdown-menu-danger">
+          <li><a class="dropdown-item" href="#">Sign in</a></li>
+          <li><a class="dropdown-item" href="registration.html">Register</a></li>
+        </ul>
+      </div>
+
+          </nav>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div> 
+                <h1>Registration Form</h1> 
+            </div>
+
+            <div>
+                <label for="fname">First Name <span style="color: red; font-size: 20px;">*</span></label>
+                <input type="text" id="fname" placeholder="Enter First Name" pattern="[A,Z], [a,z]" required>
+            </div>
+                
+            <div>
+                <label for="lname">Last Name <span style="color: red; font-size: 20px;">*</span></label>
+                <input type="text" id="lname" placeholder="Enter Last Name" pattern="[A,Z], [a,z]" required>
+            </div>
+
+            <div>
+                <label for="email">Email <span style="color: red; font-size: 20px;">*</span></label>
+                <input type="email" id="email" placeholder="Enter Email Address" pattern="[A,Z], [a,z], [0,9], @, ." required>
+            </div>
+
+            <div>
+                <label for="pword">Password <span style="color: red; font-size: 20px;">*</span></label>
+                <input type="password" id="pword" placeholder="Create Password" pattern="(?=.*[A,Z])(?=.*[a,z])(?=.*[0,9]).{10,}" title="Minimum of 10 characters" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number <span style="color: red; font-size: 20px;">*</span></label>
+                <input type="number" id="phone" placeholder="Enter Phone Number" pattern="[0,9]" required>
+            </div>
+
+            <div>
+                <label> Gender <span style="color: red; font-size: 20px;">*</span></label> <br>
+                <input type="radio" id="F" name="gender" value="Female">
+                <label> Female </label>
+                <input type="radio" id="M" name="gender" value="Male">
+                <label> Male </label> <br> <br>
+            </div>
+
+            <div>
+                <label> City/Province <span style="color: red; font-size: 20px;">*</span></label>
+                    <select>
+                       <option></option>
+                       <option>Metro Manila</option>
+                       <option>Agusan del Sur</option>
+                       <option>Cebu</option>
+                       <option>Bohol</option>
+                       <option>Surigao</option>
+                    </select>
+                </div>
+
+            <div class="Register">
+                <br><br>
+                <a href="registration-complete.html"> <button> <b> REGISTER  </b> </button> </a>
+            </div>
+
+        </article>
+    </section>
+    
+</body>
+</html>
